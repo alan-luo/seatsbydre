@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Beats";
+  src: url("../font/abeat.ttf"); }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica", sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: black;
+  border-bottom: 1px solid rgba(147, 147, 147, 0.4);
+  z-index: 90; }
+  header .logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 20px; }
+  header ul {
+    list-style: none;
+    display: block;
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 40px; }
+    header ul li {
+      display: inline;
+      padding: 0 20px; }
+      header ul li a {
+        color: #e3e3e3;
+        text-decoration: none; }
+      header ul li .buy {
+        background: #b41726;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: 1px solid #841726; }
+
+.section1 {
+  font-family: "Beats";
+  margin: 0;
+  background-image: url(../img/background.png);
+  height: 700px;
+  background-size: 100% auto; }
+  .section1 .container1 {
+    position: relative;
+    top: 90px;
+    width: 40%;
+    margin: 0 auto; }
+  .section1 .img_seat {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 20px; }
+  .section1 .seats {
+    font-weight: 400;
+    font-size: 48pt;
+    color: #aaa9ae;
+    text-align: center; }
+    .section1 .seats .red {
+      color: #e41736; }
+
+.maincontent section {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; }
+  .maincontent section .section_container {
+    padding: 150px 100px;
+    width: 80%;
+    margin: 0 auto; }
+    .maincontent section .section_container .left {
+      width: 45%;
+      padding: 40px; }
+      .maincontent section .section_container .left h3 {
+        font-size: 20pt;
+        font-weight: 300;
+        margin: 0;
+        padding: 0; }
+      .maincontent section .section_container .left h2 {
+        margin: 0;
+        padding: 16px 0;
+        font-size: 28pt;
+        font-weight: 300;
+        line-height: 1.5em; }
+      .maincontent section .section_container .left p {
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 14pt;
+        line-height: 1.7em; }
+
+.vision {
+  background: #f7f7f8; }
+  .vision .img_toilet {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    top: 50px;
+    width: 700px;
+    transform: scaleX(-1); }
+
+.design {
+  background: #e8e8e8; }
+  .design .img_falling {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 550px;
+    transform: scaleX(-1); }
+
+.innovation {
+  background: #f7f7f8; }
+  .innovation .img_sitting {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    top: 50px;
+    width: 700px;
+    transform: scaleX(-1); }
+
+.savelives {
+  color: #f5f5f5;
+  background-image: url(../img/savelives.png); }
+  .savelives h1 {
+    padding: 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 84pt; }
+  .savelives h2 {
+    font-size: 36pt;
+    font-weight: 300;
+    text-align: center; }
+  .savelives p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 18pt;
+    line-height: 2.0em; }
+
+.promotion {
+  color: #f5f5f5;
+  background-image: url(../img/eggs.png); }
+  .promotion h1 {
+    padding: 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 80pt; }
+  .promotion h2 {
+    font-size: 36pt;
+    font-weight: 300;
+    text-align: center; }
+  .promotion h3 {
+    font-size: 36pt;
+    font-weight: 300;
+    text-align: center; }
+  .promotion p {
+    font-weight: 300;
+    font-size: 11pt;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 1em;
+    width: 80%;
+    left: 10%; }
+
+.bs h1 {
+  font-family: "Beats";
+  color: #e41736; }
+  .bs h1 .notred {
+    color: #aaa9ae; }
+.bs p {
+  font-weight: 300;
+  font-size: 16pt; }
+  .bs p img {
+    display: inline-block;
+    position: relative;
+    top: 14pt; }
+.bs .pill {
+  width: 200px;
+  position: absolute;
+  right: 340px;
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  top: 130px;
+  z-index: 11; }
+.bs .seathalf {
+  right: 200px;
+  top: 60px;
+  width: 300px;
+  height: 300px;
+  position: absolute; }
+  .bs .seathalf .half_left, .bs .seathalf .half_right {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .bs .seathalf .half_left {
+    z-index: 10; }
+  .bs .seathalf .half_right {
+    z-index: 12; }
+.bs .volume {
+  position: absolute;
+  width: 400px;
+  height: 80px;
+  bottom: 0;
+  right: 140px; }
+  .bs .volume h3, .bs .volume div.slider {
+    position: absolute;
+    top: 0; }
+  .bs .volume div.slider {
+    background: #aaa9ae;
+    width: 100px;
+    height: 30px;
+    left: 100px;
+    top: 15px;
+    animation-name: volume;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+@keyframes move {
+  0% {
+    right: 340px; }
+  100% {
+    right: 100px; } }
+@keyframes volume {
+  0% {
+    background: #aaa9ae;
+    width: 50px; }
+  100% {
+    background: #e41736;
+    width: 300px; } }
+.buy {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f8; }
+  .buy .section_container {
+    margin: 0;
+    padding: 0; }
+  .buy h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 24pt; }
+    .buy h1 .homelink {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 2px solid black; }
+      .buy h1 .homelink :hover {
+        cursor: pointer; }
+  .buy h4 {
+    padding: 0;
+    font-size: 10pt;
+    font-weight: 300;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
